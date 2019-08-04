@@ -1,9 +1,57 @@
 * {
     font-family: 'Titillium Web', sans-serif;
     text-align: left;    
-    margin-left: 5%;
 }
 
 p {
     font-size: 20px;
 }
+
+.listCard {
+    background-color: #eee;
+    display: inline-block;
+    margin: 0 0 2em;
+    width: 100%;
+    break-inside: avoid;
+    border-radius: 8px;
+    box-shadow: 3px 3px 2px #ccc;
+    transition: opacity .4s ease-in-out;
+    padding-left: 1em;
+    padding-right: 1em;
+
+}
+
+@media only screen and (min-width: 1600px) {
+    #list {
+      columns:3;
+    }
+  }
+  
+  @media only screen and (max-width: 1599px) and (min-width:1200px) {
+    #list {
+      columns: 2;
+      column-gap: 5em;
+
+    }
+  }
+  
+  
+  @media only screen and (min-width: 1600px) {
+    #articles {
+      columns:4;
+    }
+  }
+  
+  @media only screen and (max-width: 1599px) and (min-width:1200px) {
+    #articles {
+      columns: 3;
+    }
+  }
+  
+  @media only screen and (max-width: 1199px) and (min-width:768px) {
+    #articles {
+      columns: 2;
+    }
+  }
+  
+  
