@@ -1,24 +1,72 @@
 * {
     font-family: 'Titillium Web', sans-serif;
-    text-align: left;    
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+body {
+  margin: 0px;
+}
+.topnav {
+  background-color: rgb(161, 160, 159);
+  overflow: hidden;
+  width: 100%;
+  height: 30px;
+  font-weight: bold;
+  box-shadow: 0 2px 3px 0px rgba(0, 0, 0, 0.2);
+}
+header {
+  padding-bottom:30px;
+}
+
+.topnav a {
+  float: left;
+  color: #ffffff;
+  font-weight: bold;
+  text-align: center;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 3px;
+  text-decoration: none;
+  font-size: 18px;
+  border-radius: 5px;
+}
+
+.topnav a:hover {
+  background-color:  rgba(129, 69, 156, 0.61);
 }
 
 p {
     font-size: 20px;
+    padding-left: 40px;
+}
+ul {
+  font-size: 15px;
 }
 
 .listCard {
     background-color: #eee;
     display: inline-block;
-    margin: 0 0 2em;
-    width: 100%;
+    width: 90%;
     break-inside: avoid;
     border-radius: 8px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
     box-shadow: 3px 3px 2px #ccc;
     transition: opacity .4s ease-in-out;
     padding-left: 1em;
     padding-right: 1em;
+}
 
+.listCard img {
+  width: 50%;
+}
+
+.listCard h2 {
+  text-align: center;
 }
 
 @media only screen and (min-width: 1600px) {
@@ -30,8 +78,6 @@ p {
   @media only screen and (max-width: 1599px) and (min-width:1200px) {
     #list {
       columns: 2;
-      column-gap: 5em;
-
     }
   }
   
