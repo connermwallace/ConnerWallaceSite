@@ -65,6 +65,9 @@ ul {
 #projects p {
   text-align: left;
 }
+#projects ul {
+  text-align: left;
+}
 .listCard img {
   width: 50%;
 }
